@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
 
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL!;
-const SERVICE_ANON_KEY = process.env.VITE_SUPABASE_ANON_KEY!;
+const SERVICE_KEY = process.env.VITE_SUPABASE_ANON_KEY!;
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ANON_KEY);
 
